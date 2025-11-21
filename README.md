@@ -220,9 +220,9 @@ npm run dev
 
 ### Tier 等级详情
 
-| Tier | 等级名称 | 评分范围 | 抵押优惠 | 利率折扣 | NFT 颜色 |
+| Tier | 等级名称 | 评分范围 | 超额部分抵押优惠 | 利率折扣 | NFT 颜色 |
 |------|---------|---------|---------|---------|---------|
-| **4** | AAA 信用大师 | 700+ | **80%** | **20%** | 🟢 金色 |
+| **4** | AAA 信用大师 | 700+ | **80%** | **20%** | 🟢 绿色 |
 | **3** | AA 信用勇士 | 600-699 | **60%** | **10%** | 🔵 蓝色 |
 | **2** | A 信用骑士 | 500-599 | **40%** | **5%** | 🟣 紫色 |
 | **1** | BBB 信用卫士 | 400-499 | **0%** | **0%** | 🟡 黄色 |
@@ -365,7 +365,7 @@ console.log(`NFT 铸造成功! Token ID: ${result.tokenId}`);
 // AAA 用户借贷 $10,000 仅需抵押 $10,666 (vs Aave $13,333)
 ```
 
-### 场景 2: 使用优惠借贷
+### 场景 2: 使用优惠借贷（仅为前端演示）
 
 ```typescript
 // 1. 选择协议
@@ -392,34 +392,7 @@ await executeBorrow(params);
 
 ---
 
-## 📈 路线图
 
-### ✅ Phase 1 - 核心功能 (已完成)
-- [x] Sui 智能合约开发
-- [x] AI 信用评分系统
-- [x] NFT 铸造功能
-- [x] 前端 dApp 开发
-- [x] 后端 API 服务
-
-### 🚧 Phase 2 - 协议集成 (进行中)
-- [ ] Aave V3 实际集成
-- [ ] Compound V3 实际集成
-- [ ] MakerDAO 集成
-- [ ] 跨协议聚合
-
-### 🔮 Phase 3 - 功能扩展 (计划中)
-- [ ] 跨链桥接 (Sui <-> Ethereum)
-- [ ] 信用评分市场
-- [ ] 社区治理 DAO
-- [ ] 移动端应用
-
-### 🌟 Phase 4 - 生态建设 (未来)
-- [ ] 信用衍生品
-- [ ] 保险协议集成
-- [ ] 信用租赁市场
-- [ ] 机构服务
-
----
 
 ## 🛡️ 安全性
 
@@ -441,73 +414,4 @@ await executeBorrow(params);
 - ⚠️ 定期监控头寸
 - ⚠️ 使用止损策略
 
----
-
-## 📚 文档
-
-- [完整启动指南](./COMPLETE_STARTUP_GUIDE.md) - 详细的部署和配置说明
-- [超额抵押优惠机制](./DeFi-AI信用哨兵-超额抵押优惠机制.md) - 机制详解和计算公式
-
----
-
-## 🤝 贡献指南
-
-我们欢迎社区贡献！请遵循以下步骤：
-
-1. Fork 本仓库
-2. 创建功能分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 开启 Pull Request
-
----
-
-## 📄 开源协议
-
-本项目采用 MIT 协议开源 - 查看 [LICENSE](LICENSE) 文件了解详情。
-
----
-
-## 👥 团队
-
-**DeFi-AI 开发团队**
-- 区块链开发
-- AI 算法设计
-- 前端工程
-- 产品设计
-
----
-
-## 📞 联系我们
-
-- **GitHub Issues**: [提交问题](https://github.com/your-repo/issues)
-- **Discord**: [加入社区](#)
-- **Twitter**: [@DeFiAI](#)
-- **Email**: contact@defiai.io
-
----
-
-## 🎓 致谢
-
-感谢以下项目和社区的支持：
-- [Sui Foundation](https://sui.io/)
-- [Move Language](https://move-book.com/)
-- [Aave Protocol](https://aave.com/)
-- [Compound Finance](https://compound.finance/)
-
----
-
-## ⚠️ 免责声明
-
-本项目目前处于测试阶段，部署在 Sui 测试网。请勿在主网使用未经审计的代码。DeFi 借贷存在风险，请谨慎评估后使用。
-
----
-
-<div align="center">
-
-**🌟 如果这个项目对您有帮助，请给我们一个 Star！**
-
-Made with ❤️ by DeFi-AI Team
-
-</div>
 
