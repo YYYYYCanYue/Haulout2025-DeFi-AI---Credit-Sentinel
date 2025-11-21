@@ -1,0 +1,12 @@
+[package]
+name = "defi-ai-nft"
+version = "1.0.0"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "testnet" }
+
+[addresses]
+sui = "0x2"
+credit_score_badge = "0x0"
+lock = "0x0"
+defi_ai_nft = "0x0"
